@@ -10,6 +10,7 @@ html{
 header{
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 .nav{
     display: flex;
@@ -331,8 +332,8 @@ color: #ffffff;
     height: 60%;
 }
 .grid-items:hover{
-    transform: scale(1.05);
-    box-shadow: 0.5rem 0.5rem 0.9rem black;
+    transform: scale(1.02);
+    animation: pulse .2s forwards;
 }
 .imagen-prod{
     margin: 1rem;
@@ -340,10 +341,6 @@ color: #ffffff;
     height: calc(100% - 2rem);
     border-radius: 2%;
     box-shadow: 0.5rem 0.5rem 0.9rem black;
-    transition: transform .8s;
-}
-.imagen-prod:hover{
-    transform: scale(1.1);
 }
 .info-prod{
     width: 90%;
@@ -371,4 +368,13 @@ button{
     border-radius: 5rem;
     border: 0;
     color: #ffffff;
+}
+
+@keyframes pulse{
+    0%{
+        border: none;
+    }
+    100%{
+        box-shadow: 0.5rem 0.5rem 0.9rem black;
+    }
 }
