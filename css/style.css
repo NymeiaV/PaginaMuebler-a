@@ -301,8 +301,8 @@ color: #ffffff;
     margin-top: 1rem;
     display: flex;
     justify-content: center;
-    font-size: 3rem;
-    color: white;
+    font-size: 5rem;
+    color: black;
 }
 
 
@@ -313,37 +313,63 @@ color: #ffffff;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
     grid-template-rows: repeat(4, 30vh);
-    gap: 0.6rem;
+    gap: 2rem;
     margin: 0 3rem 0 3rem;
 }
 .grid-items{
-    background-color: lightyellow;
-    border: 0.1rem solid black;
+    background-color: rgba(255, 255, 255, 0.75);
     font-size: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: justify;
     align-items: center;
-    border-radius: 5%;
+    border-radius: 5rem;
+    transition: transform .2s;
 }
 .grid-items > figure{
     margin: 1rem;
     width: 60%;
     height: 60%;
 }
+.grid-items:hover{
+    transform: scale(1.05);
+    box-shadow: 0.5rem 0.5rem 0.9rem black;
+}
 .imagen-prod{
     margin: 1rem;
-    width: calc(100% - 1rem) ;
-    height: calc(100% - 1rem);
+    width: calc(100% - 2rem) ;
+    height: calc(100% - 2rem);
     border-radius: 2%;
+    box-shadow: 0.5rem 0.5rem 0.9rem black;
+    transition: transform .8s;
+}
+.imagen-prod:hover{
+    transform: scale(1.1);
+}
+.info-prod{
+    width: 90%;
+    height: 30%;
 }
 .info-prod > p{
-    display: inline-block;
-    font-size: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.6rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: oblique;
+    margin: 1rem 1rem;
 }
 .info-prod > p:nth-child(3){
+    font-size: 1.1rem;
     display: block;
+    font-style: oblique;
 }
-
+button{
+    display: flex;      
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 3rem;
+    background: #202020;
+    border-radius: 5rem;
+    border: 0;
+    color: #ffffff;
+}
