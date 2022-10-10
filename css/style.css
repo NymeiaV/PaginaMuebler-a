@@ -24,6 +24,9 @@ header{
     height: 10vh;
     align-items: center;
 }  
+.nav > p > span{
+    color: rgb(163, 145, 42);
+}
 .logo{
     height: 7vh;
     width: 3.5vw;
@@ -62,14 +65,14 @@ header{
 
 .flex-container-sec{
     display: flex;
-    height: 80vh;
+    height: 100vh;
     width: 100%;
 }
 
 .flex-container > ul{
     list-style-type: none;
 }
-li{
+.nav > ul > li{
     display: inline-block;
     margin: 1.5rem;
 }
@@ -157,7 +160,7 @@ p{
 .s2{
     background-color: rgba(215, 204, 200);
     display: flex;
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     justify-content: space-evenly;
 }
@@ -178,20 +181,40 @@ p{
     padding-top: 2rem;
 }
 .cat > figure{
-    width: 50%;
+    width: 60%;
     height: 40%;
     margin-top: 2rem;
     background-color: black;
     border-radius: 50%;
+    box-shadow: 0rem 0rem 2rem black;
 }
 .cat > figure > img{
     width: 100%;
     height: 100%;
     border-radius: 50%;
 }
+.desc-cat{
+    width: 80%;
+}
+.desc-cat > p{
+    font-size: 2rem;
+}
+.desc-cat > ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+.desc-cat > ul > li{
+    font-size: 1.6rem;
+    font-style: oblique;
+}
 
 
 /* Fin Categorias */
+
+
 .s3{
     display: grid;
     background-color: rgb(255, 171, 145);
@@ -410,7 +433,7 @@ button{
     }
     100%{
         background-color: rgba(255, 255, 255, 1);
-        box-shadow: 0.5rem 0.5rem 0.9rem black;
+        box-shadow: 0rem 0rem 0.9rem black;
     }
 }
 
