@@ -6,18 +6,21 @@ html{
     font-size: 62.5%;
     scroll-behavior: smooth;
     cursor: default;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
 }
 header{
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1;
+    width: 100%;
 }
 .nav{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background-color: rgb(44, 44, 44);
-    border-bottom: 0.1rem solid green;
+    background-color: rgba(255, 255, 255, 0.75);
+    box-shadow: 0rem 1.5rem 1.5rem rgb(70, 69, 69);
     height: 10vh;
     align-items: center;
 }  
@@ -26,13 +29,16 @@ header{
     width: 3.5vw;
     margin: 1rem;
     border-radius: 50%;
-    box-shadow: 0.5rem 0.5rem 0.5rem white;
+    box-shadow: 0.5rem 0.5rem 0.5rem grey;
 }
 
-.titulo {
-    color: white;
+/* Sección Inicio */
+
+.titulo{
+    color: black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 50px;
+    font-size: 5rem;
+    font-style: oblique;
 }
 #Inicio{
     display: flex;
@@ -52,9 +58,13 @@ header{
     font-size: 2rem;
 }
 
+/* Fin Sección Inicio */
 
-
-
+.flex-container-sec{
+    display: flex;
+    height: 80vh;
+    width: 100%;
+}
 
 .flex-container > ul{
     list-style-type: none;
@@ -62,11 +72,12 @@ header{
 li{
     display: inline-block;
     margin: 1.5rem;
-    font-size: 1.5rem;
 }
 li > a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
-    color: white;
+    font-size: 1.5rem;
+    color: black;
 
 }
 li > a:hover{
@@ -122,35 +133,65 @@ p{
 .footer{
     height: 10vh;
     width: 100%;
-    background-color: rgb(44, 44, 44);
-    bottom: 0;
+    background-color: white;
     display: flex;
     position: sticky;
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-    border-top: 0.1rem solid green;
+    box-shadow: 0rem -1.5rem 1.5rem rgb(70, 69, 69);
 }
 .footer p{
-    color: white;
+    color: black;
 }
-.flex-container-sec{
-    display: flex;
-    height: 80vh;
-    width: 100%;
-}
+
 .s1{
     background-image: url(https://images.unsplash.com/photo-1600585152220-90363fe7e115?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDV8fGtpdGNoZW58ZW58MHx8fHwxNjQ1MTIyODAy&ixlib=rb-1.2.1&q=80&w=2000);
-    background-size:cover;
+    background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
+
+/* Sección Categorias */
+
 .s2{
     background-color: rgba(215, 204, 200);
     display: flex;
     height: 80vh;
     width: 100%;
+    justify-content: space-evenly;
 }
+.cat{
+    width: 30%;
+    height: 90%;
+    background-color: white;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 1rem 0px rgb(102, 59, 38) inset;
+}
+.titulo-cat{
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    padding-top: 2rem;
+}
+.cat > figure{
+    width: 50%;
+    height: 40%;
+    margin-top: 2rem;
+    background-color: black;
+    border-radius: 50%;
+}
+.cat > figure > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+/* Fin Categorias */
 .s3{
     display: grid;
     background-color: rgb(255, 171, 145);
@@ -178,14 +219,6 @@ s#imagen{
     padding: 10px;
 }
 
-.cat{
-    width: 30%;
-    height: 90%;
-    background-color: white;
-    outline: 0.1rem solid black;
-    margin: 2rem;
-    border-radius: 15%;
-}
 
 
 #especial{
@@ -247,12 +280,7 @@ color: #ffffff;
 background: #dd4010;
 color: #ffffff;
 }
-.titulo-cont{
-    background-color: #ffffff;
-    font-size: 1.6rem;
-    display: flex;
-    justify-content: center;
-}
+
 
 .box-1{
     display: inline-block;
@@ -306,6 +334,12 @@ color: #ffffff;
     color: black;
 }
 
+.titulo-cont{
+    background-color: white;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+}
 
 
 /* Sección Mas Vendidos */
@@ -323,8 +357,8 @@ color: #ffffff;
     flex-direction: column;
     justify-content: justify;
     align-items: center;
-    border-radius: 5rem;
-    transition: transform .2s;
+    border-radius: 2rem;
+    transition: transform .5s;
 }
 .grid-items > figure{
     margin: 1rem;
@@ -332,7 +366,7 @@ color: #ffffff;
     height: 60%;
 }
 .grid-items:hover{
-    transform: scale(1.02);
+    transform: scale(1.01);
     animation: pulse .2s forwards;
 }
 .imagen-prod{
@@ -340,7 +374,7 @@ color: #ffffff;
     width: calc(100% - 2rem) ;
     height: calc(100% - 2rem);
     border-radius: 2%;
-    box-shadow: 0.5rem 0.5rem 0.9rem black;
+    box-shadow: 0rem 0rem 1rem black;
 }
 .info-prod{
     width: 90%;
@@ -375,6 +409,9 @@ button{
         border: none;
     }
     100%{
+        background-color: rgba(255, 255, 255, 1);
         box-shadow: 0.5rem 0.5rem 0.9rem black;
     }
 }
+
+/* Fin Vendidos */
