@@ -1,0 +1,61 @@
+/* Navbar */
+
+.logo{
+    height: 40px;
+    width: 40px;
+}
+.nav{
+    height: 60px;
+}
+li > a{
+    font-size: 1.2rem;
+}
+.titulo{
+    font-size: 3.5rem;
+}
+
+/* Fin Navbar */
+
+/* Categorias */
+
+.s2{
+    flex-wrap: wrap;
+}
+
+/* Fin Categorias */
+
+/* Inicio */
+
+.titulo-ini{
+    font-size: 2.5rem;
+}
+
+/* Fin Inicio */
+
+/* Mas Vendidos */
+
+.s3{
+    height: auto;
+}
+.grid-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.grid-items{
+    flex-grow: 1;
+    width: 45%;
+    height: 25%;
+}
+
+/* Fin Vendidos */
+
+/* Footer */
+
+.footer-contect{
+    flex-wrap: wrap;
+}
+.items_footer{
+    flex-grow: 1;
+    width: 45%;
+}
