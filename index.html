@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (max-width: 950px)"/>
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 650px)"/>
     <title>Decolife</title>
     <link rel="shortcut icon" href="favicon/favicon.png">
     <meta name="keywords" content="muebles, mueble, mobiliario, cocina, cocinas, diseño, interior, interiores, decoración, diseño a medida, fabricante">
@@ -16,13 +18,16 @@
                 <img class="logo" src="src/favicon.ico.png " alt="Logo de la empresa ">
             </figure>
             <p class="titulo">DECO<span>LIFE</span></p>
-            <ul>
+            <ul id="toggle">
                 <li><a href="#Inicio">Inicio</a></li>
                 <li><a href="#Categorias">Categorias</a></li>
                 <li><a href="#Vendidos">Mas vendidos</a></li>
                 <li><a href="#Nosotros">Nosotros</a></li>
                 <li><a href="#Contacto">Contacto</a></li>
             </ul>
+            <span class="btn-nav" onclick="showmenu()">
+                <i class="fa fa-bars"></i>
+            </span>
         </nav>
     </header>
 
@@ -30,7 +35,7 @@
              <!-- HOME -->
         <section id="Inicio" class="flex-container-sec s1">
             <div class="titulo-ini">
-                <h1>INNOVACIÓN, DISEÑO, FUNCIÓN</h1>
+                <h1><span>INNOVACIÓN, </span><span>DISEÑO, </span><span>FUNCIÓN</span></h1>
                 <p class="frase">Con la calidad y la dedicación que tu proyecto necesita.</p>
             </div>
         </section>
@@ -127,8 +132,8 @@
                         <img class="imagen-prod" src="images/home-bg.jpg" alt="">
                     </figure>
                     <div class="info-prod">
-                        <p class="nombre-prod"><b> </b></p>
-                        <p class="precio"><button>$Precio</button></p>
+                        <p class="nombre-prod"><b>Placard casi viejo prueba </b></p>
+                        <p class="precio"><button>$90.200</button></p>
                     </div>
                     
                 </div>
@@ -257,42 +262,36 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer-">
         <div class="footer-content">
-        
             <div class="items_footer">
-            <p>Formas de Pago</p>
-            <ul class="icons-footer">
+                <p>Formas de Pago</p>
+                <ul class="icons-footer">
                
-                <li><i class="fa-brands fa-cc-visa"></i></li>
-                <li><i class="fa-brands fa-cc-mastercard"></i></li>
-                <li><i class="fa-brands fa-cc-amex"></i></li>
-                <li><i class="fa-brands fa-cc-diners-club"></i></li>
-            </ul>
-            <p>Consultá por nuestras promociones bancarias.</p>
+                    <li><i class="fa-brands fa-cc-visa"></i></li>
+                    <li><i class="fa-brands fa-cc-mastercard"></i></li>
+                    <li><i class="fa-brands fa-cc-amex"></i></li>
+                    <li><i class="fa-brands fa-cc-diners-club"></i></li>
+                </ul>
+                <p>Consultá por nuestras promociones bancarias.</p>
             </div>
             <div class="items_footer">
-            <p >Visitanos</p>  
-            <p><i class="fa-solid fa-location-dot"></i>Av. de los Lagos 1670 -Buenos Aires</p>
-            <p>Horarios:09 hs a 19 hs</p>
-            <p><i class="fa-solid fa-phone"></i> (011)15-4871-1000</p>
-           
-            </ul>
-             </div>
-    
+                <p >Visitanos</p>  
+                <p><i class="fa-solid fa-location-dot"></i>Av. de los Lagos 1670 -Buenos Aires</p>
+                <p>Horarios:09 hs a 19 hs</p>
+                <p><i class="fa-solid fa-phone"></i> (011)15-4871-1000</p>
+            </div>
             <div class="items_footer"> 
-            <p>Seguinos</p>
-            <ul class="icons-footer">
-                <li> <a href="https://www.facebook.com/nancy.gutierrez.794628/"target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-                <li> <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"target="_blank"></i></a></li>
-                <li> <a href="https://ar.pinterest.com/"><i class="fa-brands fa-pinterest"target="_blank"></i></a></li>
-                <li> <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter"target="_blank"></i></a></li></li>
-    
-            </ul>
+                <p>Seguinos</p>
+                <ul class="icons-footer">
+                    <li> <a href="https://www.facebook.com/nancy.gutierrez.794628/"target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li> <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"target="_blank"></i></a></li>
+                    <li> <a href="https://ar.pinterest.com/"><i class="fa-brands fa-pinterest"target="_blank"></i></a></li>
+                    <li> <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter"target="_blank"></i></a></li></li>
+                </ul>
             
             <p>Copyright © 2022</p>  
-             </div>
-           
+            </div>
         </div>  
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>

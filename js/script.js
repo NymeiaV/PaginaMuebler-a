@@ -7,3 +7,7 @@ $(document).ready(function(){
         })
     })
 })
+
+function showmenu() {
+    document.getElementById("toggle").classList.toggle("show");
+  }

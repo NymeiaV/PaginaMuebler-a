@@ -1,0 +1,61 @@
+/* Navbar */
+
+.btn-nav{
+    display: inline-flex;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+}
+.nav > ul{
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: calc(100% - 60px);
+    background-color: rgb(214, 214, 214);
+    top: -100vh;
+    text-align: center;
+    transition: all .4s;
+    flex-direction: column;
+}
+.nav > ul > li{
+    margin-top: 30px;
+    line-height: 30px;
+}
+.nav > ul.show{
+    top: 60px;
+    box-shadow: 0px 0px 1rem 0px rgb(0, 0, 0) inset;
+}
+li > a{
+    font-size: 2.5rem;
+}
+@media screen and (max-width: 650px) and (orientation: landscape){
+    .nav > ul > li{
+        margin-top: 5px;
+    }
+    .nav > ul{
+        overflow: scroll;
+        height: calc(100% - 60px);
+    }  
+}
+
+/* Fin Navbar */
+
+/* Inicio */ 
+.titulo-ini span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.frase{
+    font-size: 1.5rem;
+}
+
+/* fin Inicio */
+
+/* Mas Vendidos */
+
+.grid-items{
+    flex-grow: 1;
+    width: 90%;
+    height: 15%;
+}
