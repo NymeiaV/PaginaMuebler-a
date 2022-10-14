@@ -8,7 +8,21 @@ html{
     scroll-behavior: smooth;
     cursor: default;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
+}
+::-webkit-scrollbar{
+    width: 0.9rem;
+    color: #dd4010;
+}
+::-webkit-scrollbar-track{
+    background: #222222;
+}
+::-webkit-scrollbar-thumb{
+    background: #919191;
+    border-radius: 3rem;
+    border: 0.2rem solid #222222;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #f3f3f3;
 }
 @font-face {
     font-family: Great_Vibes;
@@ -106,7 +120,7 @@ li > a:hover{
 /* Sección Categorias */
 
 .s2{
-    background-color: rgba(215, 204, 200);
+    background: linear-gradient(rgba(215, 204, 200),rgb(175, 160, 155));
     display: flex;
     min-height: 650px;
     width: 100%;
@@ -427,10 +441,10 @@ button{
 
 /* Nosotros */
 .s4{
-    background-color: rgb(247, 231, 184);
+    background: linear-gradient(rgb(231, 210, 245),rgb(164, 144, 184));
     justify-content: center;
     flex-direction: column;
-    height: 70rem;
+    height: 72rem;
     box-shadow: 0px 0px 1rem 0px  rgb(0, 0, 0) inset;
 }
 .titulo-nos{
@@ -443,10 +457,11 @@ button{
 /* Carrousel */
 
 #mi-slider{
-    box-shadow: 0px 0px 3rem 0px  rgb(179, 169, 164) inset;
+    box-shadow: 0px 0px 3rem 0px  rgb(233, 161, 255) inset;
+    outline: 0.3rem solid white;
     font-family: sans-serif;
     margin: auto;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.747);
     max-width: 900px;
     max-height: 600px;
     height: 100%;
@@ -502,7 +517,7 @@ button{
       width: inherit;
       height: inherit;
       transition: opacity .5s;
-      background:#fff;
+      background: none;
   }
 
   #mi-slider > ul.slider li img{
@@ -510,7 +525,6 @@ button{
     height: 100%;
     object-fit: cover;
     border-radius: 30px;
-    box-shadow: rgb(15, 15, 15, 0.5);
   }
   .photos{
     max-width: 100%;
@@ -533,9 +547,9 @@ button{
 
   #mi-slider >.menu li a{
     display: inline-block;
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    background-color: grey;
+    background-color: rgb(171, 124, 185);
     padding: 10px;
     width: 50px;
     height: 50px;
@@ -583,6 +597,7 @@ button{
     background-color: rgb(179, 175, 174);
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: row;
     gap: 2rem;
     list-style: none;
