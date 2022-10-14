@@ -11,7 +11,7 @@
     position: fixed;
     width: 100%;
     height: calc(100% - 60px);
-    background-color: rgb(214, 214, 214);
+    background: linear-gradient(white,grey);
     top: -100%;
     text-align: center;
     transition: all .4s;
