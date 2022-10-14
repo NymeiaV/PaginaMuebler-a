@@ -1,0 +1,17 @@
+.s3{
+    height: auto;
+    overflow: scroll;
+}
+.grid-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.grid-items{
+    width: 30%;
+    height: 25%;
+}
+#especial .info-prod > p:nth-child(3), 
+#especial-2 .info-prod > p:nth-child(3){
+    visibility: hidden;
+}

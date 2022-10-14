@@ -11,7 +11,7 @@ li > a{
     font-size: 1.2rem;
 }
 .titulo{
-    font-size: 3.5rem;
+    font-size: 4.5rem;
 }
 
 /* Fin Navbar */
@@ -33,15 +33,11 @@ li > a{
 /* Fin Inicio */
 
 /* Mas Vendidos */
+#especial .info-prod > p:nth-child(3), 
+#especial-2 .info-prod > p:nth-child(3){
+    visibility: visible;
+}
 
-.s3{
-    height: auto;
-}
-.grid-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
 .grid-items{
     flex-grow: 1;
     width: 45%;
@@ -52,10 +48,19 @@ li > a{
 
 /* Footer */
 
-.footer-contect{
+.icons-footer{
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px 5px 5px 0;
+}
+.icons-footer > li > a{
+    font-size: 20px;
+}
+.footer-content{
     flex-wrap: wrap;
 }
 .items_footer{
     flex-grow: 1;
     width: 45%;
 }
+

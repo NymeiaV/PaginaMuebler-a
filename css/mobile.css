@@ -9,10 +9,10 @@
 .nav > ul{
     display: flex;
     position: fixed;
-    width: 100vw;
+    width: 100%;
     height: calc(100% - 60px);
     background-color: rgb(214, 214, 214);
-    top: -100vh;
+    top: -100%;
     text-align: center;
     transition: all .4s;
     flex-direction: column;
@@ -23,6 +23,7 @@
 }
 .nav > ul.show{
     top: 60px;
+    height: 450px;
     box-shadow: 0px 0px 1rem 0px rgb(0, 0, 0) inset;
 }
 li > a{
@@ -59,3 +60,7 @@ li > a{
     width: 90%;
     height: 15%;
 }
+
+/* Fin Vendidos */
+
+/* Footer */
