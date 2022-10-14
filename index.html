@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/large.css" media="screen and (max-width: 1150px)"/>
     <link rel="stylesheet" href="css/tablet.css" media="screen and (max-width: 950px)"/>
     <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 650px)"/>
     <title>Decolife</title>
@@ -17,7 +18,7 @@
             <figure>
                 <img class="logo" src="src/favicon.ico.png " alt="Logo de la empresa ">
             </figure>
-            <p class="titulo">DECO<span>LIFE</span></p>
+            <p class="titulo">Deco<span>life</span></p>
             <ul id="toggle">
                 <li><a href="#Inicio">Inicio</a></li>
                 <li><a href="#Categorias">Categorias</a></li>
@@ -214,26 +215,47 @@
         </section>
     </section>
     <section id="Nosotros" class="flex-container-sec s4">
-        <div class="slider">
-      <ul>
-        <li>
-           <h2>CONOCE A NUESTROS DISEÑADORES </h2>
-           <p>Todos ellos son expertos galardonados, como no podría ser menos. Pero quizá lo más importante sea nuestra mutua interpretación del buen diseño: productos elegantes y bien concebidos que reflejan nuestros tiempos y mejoran nuestras vidas.
-
-            Como creativos de nuestra colección, les confiamos nuestras vidas. Y con más de cien telas a elegir y una variedad de materiales, colores y opciones de personalización, puedes tener la confianza de que nuestros diseños enriquecerán tu hogar.</p>
-        <li>
-          <img src="images/team-image1.jpg" alt="foto1" /><img src="images/Marcus.jpg" alt="Marcus" />
-        </li>
-
-        <li>
-          <img src="images/team-image2.jpg" alt="foto2" /><img src="images/Andrea.jpg" alt="Andrea" />
-        </li>
-
-        <li>
-          <img src="images/team-image3.jpg" alt="foto3" /> <img src="images/francisco.jpg" alt="Francisco" />
-        </li>
-
-      </ul>
+        <h1 class="titulo-nos">Nosotros</h1>
+        <div id="mi-slider">
+            <ul class="slider">
+                <li id="slide1">
+                    <h1>Conocé a nuestro equipo</h1>
+                    <p>Todos ellos son expertos con una excelente interpretación del buen diseño: productos elegantes y bien concebidos que reflejan nuestros tiempos y mejoran nuestras vidas.
+                    </p>
+                    <img src="images/equipo.jpg" alt="equipo">
+                </li>
+                <li id="slide2">
+                    <h1>Andrea Dumas</h1>
+                    <p>Andrea posee una pasión por el uso de nuevas tecnologías para crear diseños atractivos que aportan un gran valor para el usuario.</p>
+                    <img class="photos" src="images/team-image2.jpg" alt="foto de Andrea"/>
+                </li>
+                <li id="slide3">
+                    <h1>Francisco Guzman</h1>
+                    <p>Francisco se atreve a usar detalles divertidos y distintivos que hacen que sus diseños se destaquen sin comprometer su confort y función.</p>
+                    <img src="images/team-image3.jpg "alt="foto de Francisco">
+                </li>
+                <li id="slide4">
+                    <h1>Malena Deep</h1>
+                    <p>Malena tiene un gran talento para trabajar con las dimensiones y colores adecuados, asegurando que el resultado final será siempre hermoso.
+                    </p>
+                    <img src="images/zulmaury-saavedra-jEY5TyyI-no-unsplash.jpg"foto de Marcus">
+                </li>
+            </ul>
+            <ul class="menu">
+              <li>
+                <a href="#slide1"><b>1</b></a>
+              </li>
+              <li>
+                <a href="#slide2"><b>2</b></a>
+              </li>
+               <li>
+                <a href="#slide3"><b>3</b></a>
+              </li>
+              <li>
+                <a href="#slide4"><b>4</b></a>
+              </li>
+            </ul>
+        </div>     
     </section>
         <section id="Contacto" class="flex-container-sec s5">
             <div id="form">
@@ -251,7 +273,7 @@
                          <input type="submit" class="form-control button" name="message" value="Enviar Mensaje">
                     </div>
                     <div class="box-3">
-                         <textarea class="form-control" rows="8" cols="64" placeholder="Su mensaje" name="message" required></textarea>
+                         <textarea class="form-control" rows="8" cols="32" placeholder="Su mensaje" name="message" required></textarea>
                     </div>
                </form>
             </div>
@@ -262,12 +284,11 @@
             </div>
         </section>
     </main>
-    <footer class="footer-">
+    <footer class="footer">
         <div class="footer-content">
             <div class="items_footer">
                 <p>Formas de Pago</p>
                 <ul class="icons-footer">
-               
                     <li><i class="fa-brands fa-cc-visa"></i></li>
                     <li><i class="fa-brands fa-cc-mastercard"></i></li>
                     <li><i class="fa-brands fa-cc-amex"></i></li>
