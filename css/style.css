@@ -54,6 +54,7 @@ header{
     box-shadow: 0.5rem 0.5rem 0.5rem grey;
 }
 .btn-nav{
+    justify-content: center;
     display: none;
     cursor: pointer;
     font-size: 25px;
