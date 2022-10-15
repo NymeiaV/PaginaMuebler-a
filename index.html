@@ -258,24 +258,25 @@
         </div>     
     </section>
         <section id="Contacto" class="flex-container-sec s5">
-            <div id="form">
-                <form id="contact-form" role="form" action="" method="post">
+            <div id="contact-form">
+                <form id="form" action="" method="post">
                     <div class="titulo-cont">
                          <h1>Contacte con Nosotros</h1>
                     </div>
                     <div class="box-1">
-                         <input type="text" class="form-control" placeholder="Nombre y Apellido" name="name" required>
+                         <input type="text" class="form-control" placeholder="Nombre y Apellido" name id="name" >
                     </div>
                     <div class="box-1">
-                         <input type="email" class="form-control" placeholder="Direcciòn E-mail" name="email" required>
+                         <input type="email" class="form-control" placeholder="Direcciòn E-mail" name id="email" >
                     </div>
                     <div class="box-2">
-                         <input type="submit" class="form-control button" name="message" value="Enviar Mensaje">
+                         <input type="submit" class="form-control button" name id="btn" value="Enviar Mensaje">
                     </div>
                     <div class="box-3">
-                         <textarea class="form-control" rows="8" cols="32" placeholder="Su mensaje" name="message" required></textarea>
+                         <textarea class="form-control" rows="8" cols="32" placeholder="Su mensaje" name id="mensaje" ></textarea>
                     </div>
                </form>
+               <p id="alertas"></p>
             </div>
             <div class="cont-mapa">
                 <h1>Visite nuestro local</h1><br>
