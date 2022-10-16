@@ -585,7 +585,6 @@ textarea {
     background: linear-gradient(white, rgb(170, 170, 170));
     border-radius: 1rem;
     box-shadow: 0rem 0rem 2rem rgb(0, 0, 0);
-    z-index: 1;
 }
 
 .cont-mapa > h1{
