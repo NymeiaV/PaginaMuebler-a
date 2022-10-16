@@ -51,16 +51,46 @@ li > a{
     font-size: 1.5rem;
 }
 
-/* fin Inicio */
+/* Fin Inicio */
 
 /* Mas Vendidos */
 
 .grid-items{
     flex-grow: 1;
     width: 90%;
-    height: 15%;
+    height: 10%;
+}
+button{
+    margin-top: 0.5rem;
+    width: 12rem;
+    height: 5rem;
+}
+#especial figure,
+#especial-2 figure,
+.grid-items figure{
+    height: 55%;
+}
+
+
+.grid-items > figure{
+    margin: 1rem;
+}
+.info-prod > p{
+    margin: 1rem 0 1rem 0;
+    font-size: 1.8rem;
+}
+#especial .info-prod > p,
+#especial-2 .info-prod > p{
+    font-size: 1.8rem;
+    margin: 0;
 }
 
 /* Fin Vendidos */
 
-/* Footer */
+/* Contacto */
+
+textarea{
+    max-height: 130px;
+}
+
+/* Fin Contacto */
