@@ -33,13 +33,13 @@ li > a{
 /* Fin Inicio */
 
 /* Mas Vendidos */
-#especial .info-prod > p:nth-child(3), 
-#especial-2 .info-prod > p:nth-child(3){
-    visibility: visible;
-}
 .s3{
     overflow: scroll;
     overflow-x: hidden;
+}
+#especial .info-prod > p:nth-child(3), 
+#especial-2 .info-prod > p:nth-child(3){
+    visibility: visible;
 }
 .grid-container{
     row-gap: 1.2rem;
@@ -65,18 +65,24 @@ li > a{
 .s5{
     flex-direction: column;
     align-items: center;
-    height: 150vh;
+    min-height: 100rem;
 }
 #contact-form{
     width: 80%;
     justify-content: space-evenly;
     position: relative;
 }
-.cont-mapa{
-    width: 80%;
-}
 textarea{
     max-height: 200px;
+}
+.sidebar{
+    width: 80%;
+}
+.sidebar > iframe{
+    height: 80%;
+}
+.sidebar > h1{
+    margin: 0.5rem
 }
 
 /* Fin Contacto */
@@ -99,3 +105,4 @@ textarea{
     width: 45%;
 }
 
+/* Fin footer */

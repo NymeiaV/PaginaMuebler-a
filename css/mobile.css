@@ -1,10 +1,13 @@
+html{
+    scroll-padding: 60px;
+}
 /* Navbar */
 
 .btn-nav{
     display: inline-flex;
     align-items: center;
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
 }
 .nav > ul{
     display: flex;
@@ -77,12 +80,21 @@ button{
 }
 .info-prod > p{
     margin: 1rem 0 1rem 0;
-    font-size: 1.8rem;
+    font-size: 4vw;
 }
 #especial .info-prod > p,
 #especial-2 .info-prod > p{
-    font-size: 1.8rem;
+    font-size: 4vw;
     margin: 0;
+}
+#especial .info-prod > p:nth-child(3),
+#especial-2 .info-prod > p:nth-child(3){
+    font-size: 3vw;
+}
+button{
+    height: 6vh;
+    width: 30vw;
+    font-size: 3vw;
 }
 
 /* Fin Vendidos */
